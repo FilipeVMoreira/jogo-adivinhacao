@@ -5,7 +5,7 @@ Programação Orientada a Objetos (POO) e princípios SOLID.
 ## 🐢 Sumário
 
 - [Sobre o projeto](https://github.com/FilipeVMoreira/jogo-adivinhacao/blob/main/README.md#-sobre-o-projeto-sobre-o-projeto)
-- [Conceitos aplicados](https://github.com/FilipeVMoreira/jogo-adivinhacao/blob/main/README.md#-conceitos-aplicados-conceitos-aplicados)
+- [Conceitos aplicados](https://github.com/FilipeVMoreira/jogo-adivinhacao/blob/main/README.md#-conceitos-aplicados)
 - [Como executar](https://github.com/FilipeVMoreira/jogo-adivinhacao/blob/main/README.md#aplica%C3%A7%C3%A3o-de-princ%C3%ADpios-como-srp-ocp-lsp-isp-e-dip)
 - [Simulação de jogada](https://github.com/FilipeVMoreira/jogo-adivinhacao/blob/main/README.md#-simulando-uma-jogada-simulando-jogada)
 
