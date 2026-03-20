@@ -1,7 +1,7 @@
 import random
 from abc import ABC, abstractmethod
 
-# Classe principal do jogo que poderá ser reutilizada
+# Classe principal do jogo que poderá ser reutilizada.
 class Jogo(ABC):
 
     @abstractmethod
@@ -12,17 +12,16 @@ class Jogo(ABC):
     def jogar(self):
         pass
 
-
+# Classe que define o jogador, armazenando o input que contém o nome.
 class Jogador:
     def __init__(self):
         self.__nome = ""
-
     def obter_nome(self):
         if not self.__nome:
             self.__nome = input("Digite seu nome: ")
         return self.__nome
 
-# Classe que define o ranking que atualiza ao longo das iterações do laço while True
+# Classe que define o ranking que atualiza ao longo das iterações do laço while True.
 class Ranking:
 
     def __init__(self):
@@ -43,7 +42,7 @@ class Ranking:
         for pos, (nome, tentativas) in enumerate(ranking_ordenado, start=1):
             print(f"{pos}º lugar - {nome} ({tentativas} tentativas)")
 
-# Classe que estrutura a estrutura do jogo em si, demostrando as tentativas e exibindo as instruções de adivinhação de forma visual
+# Classe que estrutura a estrutura do jogo em si, demostrando as tentativas e exibindo as instruções de adivinhação de forma visual.
 class JogoAdivinhacao(Jogo, Jogador):
 
     def __init__(self, ranking):
@@ -90,13 +89,17 @@ class JogoAdivinhacao(Jogo, Jogador):
         print("Suas tentativas acabaram!")
         print("O número secreto era:", self.__numero_secreto)
 
-# Execução do jogo
+# Execução do jogo.
 def executar_jogo(jogo: Jogo):
     jogo.iniciar()
     jogo.jogar()
 
+# MAIN
 
+# Chama a classe Ranking armazenando-a na variável ranking para atualizá-lo a cada jogada nova.
 ranking = Ranking()
+
+# Iteração que garante a continuidade de um jogo mesmo se um jogador ganha ou perde.
 while True:
 
     jogo = JogoAdivinhacao(ranking)
