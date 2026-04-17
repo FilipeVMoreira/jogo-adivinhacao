@@ -42,7 +42,7 @@ class Ranking:
         for pos, (nome, tentativas) in enumerate(ranking_ordenado, start=1):
             print(f"{pos}º lugar - {nome} ({tentativas} tentativas)")
 
-# Classe que estrutura a estrutura do jogo em si, demostrando as tentativas e exibindo as instruções de adivinhação de forma visual.
+# Classe com a estrutura do jogo em si, demostrando as tentativas e exibindo as instruções de adivinhação de forma visual.
 class JogoAdivinhacao(Jogo, Jogador):
 
     def __init__(self, ranking):
